@@ -94,4 +94,18 @@ export const getMovie = (args) => {
     if (!response.ok) throw new Error("Failed to fetch upcoming movies");
     return await response.json();
   };
+
+  // src/api/tmdb-api.js
+
+export const getNowPlayingMovies = async () => {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch now playing movies");
+  }
+  const data = await response.json();
+  return data.results;
+};
+
   
