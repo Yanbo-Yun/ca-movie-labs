@@ -19,7 +19,7 @@ import Spinner from '../spinner'
   {
     margin: 1,
     minWidth: "90%",
-    backgroundColor: "rgb(255, 255, 255)"
+    backgroundColor: "rgb(155, 255, 255)"
   };
 
 export default function FilterMoviesCard(props) {
@@ -57,7 +57,7 @@ export default function FilterMoviesCard(props) {
   return (
     <Card 
       sx={{
-        backgroundColor: "rgb(204, 204, 0)"
+        backgroundColor: "rgb(105, 204, 0)"
       }} 
       variant="outlined">
       <CardContent>
