@@ -27,7 +27,7 @@ const UpcomingMoviesPage = () => {
       action={(movie) => {
         return (
           <PlaylistAddIcon
-            onClick={() => addToWatchlist(movie)} // 添加点击事件处理程序
+            onClick={() => addToWatchlist(movie)} 
             sx={{ cursor: "pointer", fontSize: 30, color: "blue" }}
           />
         );
