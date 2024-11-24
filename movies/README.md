@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# CA Movie Labs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a movie browsing application built with React, utilizing the TMDB API to display a list of movies, including upcoming, now playing, and popular movies. Users can explore movie details, reviews, and actor information, as well as add movies to their favorites list.
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- **Movie List**: Display a list of movies from various categories such as popular, now playing, and upcoming.
+- **Movie Details**: View detailed information about each movie, including genres, cast, reviews, and more.
+- **Movie Recommendations**: Display movie recommendations based on the selected movie.
+- **Actor Details**: View detailed information about actors, including their biography and filmography.
+- **Pagination**: Implement pagination to show only a limited number of movies per page, making browsing more efficient.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### API Endpoints
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app uses the following additional TMDB API endpoints:
+1.Discover list of movies: /discover/movie
+2.Movie details: /movie/:id
+3.Movie genres: /genre/movie/list
+4.Movie recommendations: /movie/:id/recommendations
+5.Movie credits (actors, crew): /movie/:id/credits
+6.Movie reviews: /movie/:id/reviews
+7.Upcoming movies: /movie/upcoming
+8.Now playing movies: /movie/now_playing
+9.Popular movies: /movie/popular
 
-### `npm test`
+### Routing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following routes are supported by the app:
+/home: Displays the homepage with a list of popular, now playing, and upcoming movies.
+/movie/:id: Displays details of a specific movie.
+/favorite: Displays a list of movies added to favorites.
 
-### `npm run build`
+### feeling and learning
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Completing this project has been a rewarding experience for me. It allowed me to enhance my skills in React, UI design, and API integration. 
+I enjoyed solving problems like building responsive layouts and managing the state of the app. There were challenges along the way, especially when it came to debugging and handling unexpected issues. 
+But overcoming them helped me grow as a developer. Seeing the final result and knowing I built something functional from scratch was truly satisfying. 
+Overall, this project strengthened my front-end development skills and gave me more confidence in tackling future projects.
